@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="tarp.js"></script>
+        <title>Price Predictor</title>
+    </head>
+    <body>
+        <div class="login__content">
+            <img src="bg-login.png" class="login__img">
+        <div class="container">
+                <form action="" class="form login__form">
+                    <div>
+                       <h1 class="login__title">
+                        <span>Welcome</span>to Estimator.
+                       </h1>  
+                       <p class="login__description">
+                        Please choose your preferences
+                       </p>
+                    </div>
+                    <div>
+                        <div class="login__inputs">
+                            <label for="" class="login__label">Area in (sq.ft)</label>
+                            <input type="text" placeholder="Enter sqft:" required class="login__input area floatLabel" type="text" id="uiSqft" name="total_sqft" value="1000">
+                        </div>
+
+                        <div class="login__inputs radio switch-field">
+                            <label for="" class="login__label">BHK</label>
+                            <input type="radio" id="radio-bhk-1" name="bhk" value="1"/>
+                            <label for="radio-bhk-1">1</label>
+                            <input type="radio" id="radio-bhk-2" name="bhk" value="2" checked/>
+                            <label for="radio-bhk-2">2</label>
+                            <input type="radio" id="radio-bhk-3" name="bhk" value="3"/>
+                            <label for="radio-bhk-3">3</label>
+                            <input type="radio" id="radio-bhk-4" name="bhk" value="4"/>
+                            <label for="radio-bhk-4">4</label>
+                            <input type="radio" id="radio-bhk-5" name="bhk" value="5"/>
+                            <label for="radio-bhk-5">5</label>
+                        </div>
+                        <div class="login__inputs radio switch-field">
+                            <label for="" class="login__label">Bath</label>
+                            <input type="radio" id="radio-bhk-1" name="bath" value="1"/>
+                            <label for="radio-bath-1">1</label>
+                            <input type="radio" id="radio-bhk-2" name="bath" value="2" checked/>
+                            <label for="radio-bath-2">2</label>
+                            <input type="radio" id="radio-bhk-3" name="bath" value="3"/>
+                            <label for="radio-bath-3">3</label>
+                            <input type="radio" id="radio-bhk-4" name="bath" value="4"/>
+                            <label for="radio-bath-4">4</label>
+                            <input type="radio" id="radio-bhk-5" name="bath" value="5"/>
+                            <label for="radio-bath-5">5</label>
+                        </div>
+                        <div class="login__inputs">
+                            <label for="" class="login__label">Location </label>
+                            <select class="location login__input" name="location" id="uiLocations">
+                                <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                                    <option>Electronic City</option>
+                                    <option>Rajaji Nagar</option>
+                              </select>
+                        </div>
+                      
+                    </div>
+                    <div>
+                        <div class="login__buttons">
+                            <button type="button"  onclick="onClickedEstimatePrice()" class="login__button submit">Estimate</button>
+                        </div>
+                    </div>
+                    <div id="uiEstimatedPrice" class="result">	
+                        <h2></h2>
+                     </div>
+                </form>
+            </div>
+            
+        </div>
+
+        <!--=============== MAIN JS ===============-->
+        
+    </body>
+</html>
